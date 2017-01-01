@@ -13,7 +13,7 @@
         <!--WeatherVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="WeatherVC" customModule="rainyshinycloudy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="WeatherVC" id="BYZ-38-t0r" customClass="WeatherVC" customModule="rainyshinycloudy" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -83,14 +83,14 @@
                                 <rect key="frame" x="0.0" y="299" width="375" height="368"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="78" id="iBz-RG-nGl">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="78" id="iBz-RG-nGl" customClass="WeatherCell" customModule="rainyshinycloudy" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="78"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iBz-RG-nGl" id="AeR-9z-tOT">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="78"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vt2-EW-RuC">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vt2-EW-RuC">
                                                     <rect key="frame" x="8" y="14" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="Lr9-yF-d2b"/>
@@ -158,6 +158,13 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="dayLabel" destination="dDM-Nm-dVR" id="ULt-bV-hAK"/>
+                                            <outlet property="highTemp" destination="bUG-ke-4xc" id="yI8-r9-9bD"/>
+                                            <outlet property="lowTemp" destination="ghk-Ql-xBs" id="k0M-EO-fHR"/>
+                                            <outlet property="weatherIcon" destination="Vt2-EW-RuC" id="Jcb-Lw-J6n"/>
+                                            <outlet property="weatherType" destination="pDI-ZP-cfz" id="hZb-qS-78a"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
