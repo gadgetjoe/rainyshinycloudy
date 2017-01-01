@@ -179,7 +179,7 @@
                         <outlet property="currentWeatherLabel" destination="p4m-kj-svZ" id="XzZ-8B-XMz"/>
                         <outlet property="dateLabel" destination="kBn-fc-sJa" id="CvF-rn-7mW"/>
                         <outlet property="locationLabel" destination="Qgn-rE-ue3" id="5n5-5Z-kSI"/>
-                        <outlet property="tableView" destination="S5v-kP-D5y" id="jau-ZY-fHy"/>
+                        <outlet property="tableView" destination="S5v-kP-D5y" id="ssz-Nf-0lO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
